@@ -14,6 +14,8 @@
 - CSS
   - [Fontes e formas de estilização](#fontes-e-formas-de-estilização)
   - [Seletores e box model](#seletores-e-box-model)
+  - [Background](#background)
+  - [Flexbox](#flexbox)
 
 ### HTML
 
