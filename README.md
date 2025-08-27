@@ -1,4 +1,4 @@
 # Exemplos de Código
-- [html](./html#html)
-- [css](./css#css)
-- [python](./python#python)
+- [html](./html/README.md)
+- [css](./css/README.md)
+- [python](./python/README.md)
