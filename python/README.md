@@ -11,6 +11,7 @@
 - [`try`/`except`](#tryexcept)
 - [Funções e asserções](#funções-e-asserções)
 - [Listas](#listas)
+- [Dicionários](#dicionários)
 
 ## Comando de saída e tipos primitivos de dados
 ```python
@@ -178,5 +179,105 @@ assert get_remainder(28, 10) == 8
 players = ['ada', 'bob', 'chris', 'dan']
 
 print(players)
+# ['ada', 'bob', 'chris', 'dan']
+
+print(type(players))
+# <class 'list'>
+
+print(len(players))
+# 4
+
+print(players[0])
+# ada
+
+players[1] = 'bill'
+print(players)
+# ['ada', 'bill', 'chris', 'dan']
+
+# índices negativos acessam a lista de trás pra frente
+print(players[-1])
+# 'dan'  
+
+print(players[1:4])
+# ['bill', 'chris', 'dan']
+
+print('fin' in players)
+# False
+
+players.append('eve')
+print(players)
+# ['ada', 'bill', 'chris', 'dan', 'eve']
+
+players.insert(2, 'bob')
+print(players)
+# ['ada', 'bill', 'bob', 'chris', 'dan', 'eve']
+
+players.remove('dan')
+print(players)
+# ['ada', 'bill', 'bob', 'chris', 'eve']
+
+players.pop(0)
+print(players)
+# ['bill', 'bob', 'chris', 'eve']
+
+players.sort(reverse = True)
+print(players)
+# ['eve', 'chris', 'bob', 'bill']
+
+print(players.index('bob'))
+# 2
+
+print(players.index('fin'))
+# ValueError: 'fin' is not in list
+
+players.clear()
+print(players)
+# []
+```
+[Voltar ao início](#python)
+
+## Dicionários
+```python
+player = {
+  'name': 'ada',
+  'score': 10
+}
+
+print(player)
+# {'name': 'ada', 'score': 10}
+
+print(type(player))
+# <class 'dict'>
+
+print(len(player))
+# 2
+
+print(player.keys())
+# dict_keys(['name', 'score'])
+
+print(player.values())
+# dict_values(['ada', 10])
+
+print('name' in player)
+# True
+
+print(player['name'])
+# ada
+
+player['score'] = 8
+print(player)
+# {'name': 'ada', 'score': 8}
+
+player['vip'] = True
+print(player)
+# {'name': 'ada', 'score': 8, 'vip': True}
+
+player.pop('vip')
+print(player)
+# {'name': 'ada', 'score': 8}
+
+player.clear()
+print(player)
+# {}
 ```
 [Voltar ao início](#python)
