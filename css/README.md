@@ -3,6 +3,7 @@
 - [Seletores e box model](#seletores-e-box-model)
 - [Background](#background)
 - [Flexbox](#flexbox)
+- [Grid](#grid)
 ## Fontes e formas de estilização
 
 ### Inline
@@ -94,6 +95,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+```
+[Voltar ao início](#css)
+
+## Grid
+```css
+section{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 200px;
+}
+
+.span2{
+  grid-column: span 2
 }
 ```
 [Voltar ao início](#css)
