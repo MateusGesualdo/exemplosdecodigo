@@ -4,6 +4,8 @@
 - [Background](#background)
 - [Flexbox](#flexbox)
 - [Grid](#grid)
+- [Variáveis](#variáveis)
+- [Media queries](#media-queries)
 ## Fontes e formas de estilização
 
 ### Inline
@@ -110,6 +112,31 @@ section{
 
 .span2{
   grid-column: span 2
+}
+```
+[Voltar ao início](#css)
+
+## Variáveis
+```css
+ :root{
+    --title-size: 30px;
+    --title-color: darkblue
+  }
+
+  h1{
+    font-size: var(--title-size);
+    color: var(--title-color);
+  }
+```
+[Voltar ao início](#css)
+
+## Media queries
+```css
+@media (min-width: 400px) and (max-width: 800px){
+  h1 {
+    font-size: 30px;
+    color: darkblue;
+  }
 }
 ```
 [Voltar ao início](#css)
